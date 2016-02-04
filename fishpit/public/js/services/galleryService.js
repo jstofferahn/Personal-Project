@@ -1,9 +1,9 @@
-angular.module('fishPit').service('menuService', function($http){
+angular.module('fishPit').service('galleryService', function($http){
         this.getData = function(){
-            
+            console.log('hi')
             return $http({
                 method: 'GET',
-                url: '/api/products'
+                url: '/api/pictures'
             }).then(function(response){
                 console.log(response.data)
                 return response.data
@@ -15,17 +15,17 @@ angular.module('fishPit').service('menuService', function($http){
          this.postData = function(product) {
              return $http({
                  method: 'POST',
-                 url: '/api/products',
+                 url: '/api/pictures',
                  data: product
              }).then(function(response){
-                 
+                 console.log('data')
                  return response
              })
          }
          this.removeData = function(id) {
              return $http({
                  method: 'DELETE',
-                 url: 'api/products/' + id
+                 url: 'api/pictures/' + id
              }).then(function(response){
                  
                  return response.data
@@ -36,7 +36,7 @@ angular.module('fishPit').service('menuService', function($http){
          this.changeData = function( data) {
              return $http({
                  method: 'PUT',
-                 url: 'api/products/' + data._id,
+                 url: 'api/pictures/' + data._id,
                  data: data
              }).then(function(response){
                  return response.data

@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box
 }
+.container {
+    width: 100%;
+    height: 100vh
+}
 
 /*header */
 header {
@@ -68,7 +72,7 @@ nav {
 .menu-box {
     
     position: relative;
-    border: 100px solid black;
+    border: 75px solid black;
     width: 100%
 }
 .menu-header {
@@ -90,4 +94,69 @@ nav {
 
 .input-box {
     background-color: light-gray
+}
+
+
+/*About*/
+
+.about {
+    position: relative;
+    margin-bottom: 40em
+}
+
+.Sushi-spot {
+    /*position: absolute;*/
+    text-align: center
+}
+.description {
+    position: relative;
+    width: 100%
+}
+.textbox1 {
+    position: absolute;
+    float: left;
+    width: 25em;
+    left: 10em;
+    margin-right: 2em
+    
+}
+.fresh-image1 {
+    width: 400px;
+    border-radius: 25%;
+    height: 460px;
+    padding-top: 1em
+}
+.textbox2 {
+    position: absolute;
+    float: right;
+    width: 25em;
+    right: 10em;
+    
+}
+.zach-image {
+    width: 400px;
+    border-radius: 25%;
+    height: 500px;
+    padding-top: 4em
+}
+
+/*gallery*/
+.gallery-index {
+   
+    width: 100%;
+    top: 40em
+}
+.gallery-header {
+    text-align: center
+}
+.pic {
+    
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+   float: right
+  
+    
+    
 }
