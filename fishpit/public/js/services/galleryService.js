@@ -1,11 +1,11 @@
 angular.module('fishPit').service('galleryService', function($http){
         this.getData = function(){
-            console.log('hi')
+            
             return $http({
                 method: 'GET',
                 url: '/api/pictures'
             }).then(function(response){
-                console.log(response.data)
+                
                 return response.data
                 
             })
@@ -18,7 +18,7 @@ angular.module('fishPit').service('galleryService', function($http){
                  url: '/api/pictures',
                  data: product
              }).then(function(response){
-                 console.log('data')
+                 
                  return response
              })
          }

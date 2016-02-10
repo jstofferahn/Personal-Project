@@ -1,4 +1,4 @@
-var Gallery = require('./../models/gallery')
+var Gallery = require('./../models/galleryModel')
 
 
 module.exports = {

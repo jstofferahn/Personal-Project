@@ -1,4 +1,4 @@
-var Menu = require('./../models/menu')
+var Menu = require('./../models/menuModel')
 
 
 module.exports = {

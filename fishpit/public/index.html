@@ -3,7 +3,7 @@
     <head>
         <title>Fish Pit</title>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-
+          
         <link rel="stylesheet" type="text/css" href="style.css">
         
     </head>
@@ -13,6 +13,10 @@
             <header>
                <header-logo></header-logo> 
             </header>
+            
+            <div>
+                <ui-view></ui-view>
+            </div>
             <div class="carousel">
                 <slider-pic ></slider-pic>
             </div>
@@ -26,8 +30,14 @@
             <div class="gallery-index">
                 <pic-gallery></pic-gallery>
             </div>
-            <footer></footer>
-        
+            <div class="contact-page">
+                <contact-us></contact-us>
+            </div>
+            
+            <footer>
+                
+            </footer>
+       
         </div>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
          
@@ -40,6 +50,8 @@
         <!--<script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqD8reaekJrEafZxAFg2Mt-6CIVIe1Fs8&callback=initMap">
         </script>-->
+         
+       
          <script src="js/app.js"></script>
          <script src="js/directives/headerLogo.js"></script>
          <script src="js/directives/navBar.js"></script>
@@ -50,6 +62,10 @@
          <script src="js/directives/aboutMe.js"></script>
          <script src="js/directives/picGallery.js"></script>
          <script src="js/services/galleryService.js"></script>
+         <script src="js/directives/contactUs.js"></script>
+         <script src="js/services/calendarService.js"></script>
+         <script src="js/controls/calendarCtrl.js"></script>
+         <script src="js/directives/reserCalendar.js"></script>
     </body>
     
     

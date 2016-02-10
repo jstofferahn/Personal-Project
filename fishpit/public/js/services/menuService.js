@@ -5,7 +5,7 @@ angular.module('fishPit').service('menuService', function($http){
                 method: 'GET',
                 url: '/api/products'
             }).then(function(response){
-                console.log(response.data)
+                
                 return response.data
                 
             })

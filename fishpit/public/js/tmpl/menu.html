@@ -1,5 +1,5 @@
 <div>
-    <div class="menu-header">Menu</div>
+    <div class="menu-header"><h2>Menu</h2></div>
      <div class="menu">
             
     
@@ -19,7 +19,7 @@
             
             <div class="products" ng-repeat="foods in food">
                 <span>{{foods.name}}</span> <br>
-                <span>{{foods.description}}</span>.....................................................<span>${{foods.price}}</span>    
+                <span>{{foods.description}}</span>...............................................................................<span>${{foods.price}}</span>   <img class="menu-pic" ng-src="{{foods.image}}"> 
                 <br>
                 <br>
                 <!--<button class = "button" ng-click="editing=true"> edit</button>
