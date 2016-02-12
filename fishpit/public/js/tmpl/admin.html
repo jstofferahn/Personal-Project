@@ -1,0 +1,123 @@
+<div class='adminpage'>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Login</h4>
+
+        </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate" ng-model="input.username">
+                        <label for="first_name">UserName</label>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="password" type="password" class="validate" ng-model="input.password">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat" ng-click="signIn(input)">Submit</a>
+        </div>
+    </div>
+
+    <div>
+        <div class="menu-header">
+            <h2>Menu</h2></div>
+        <div class="menu">
+
+
+            <div class="input-box">
+
+                <input type="text" name="name" ng-model="addName">
+
+                <input type="text" name="description" ng-model="addDescription">
+
+                <input type="number" name="price" ng-model="addPrice">
+                <input type="text" name="image" ng-model="addImage">
+                <br>
+            </div>
+            <button class="button" ng-click="addData({name: addName, description: addDescription, price: addPrice, image: addImage})">Submit</button>
+            <br>
+            <br>
+
+
+            <div class="products" ng-repeat="foods in food">
+                <span>{{foods.name}}</span>
+                <br>
+                <span>{{foods.description}}</span>
+                <dots title="foods.description"></dots><span>${{foods.price}}</span> <img class="menu-pic" ng-src="{{foods.image}}">
+                <br>
+                <br>
+                <button class="button" ng-click="editing=true"> edit</button>
+                <button class="button" ng-click="deleteData(foods._id)">delete</button>
+                <div ng-show="editing ">
+                    <input type="text" name="name" ng-model="foods.name">
+                    <br>
+                    <input type="text" name="description" ng-model="foods.description">
+                    <br>
+                    <input type="number" name="price" ng-model="foods.price">
+                    <input type="text" name="image" ng-model="foods.image">
+                    <br>
+                    <button class="button" ng-click="changeData({name: foods.name, description: foods.description, price: foods.price, _id: foods._id, image: foods.image }); editing=false">Save</button>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="gallery-header">
+            <h1>Gallery</h1></div>
+        <div class="gallery">
+
+
+
+
+            <input type="text" image="image" ng-model="addImage">
+
+
+            <button class="button" ng-click="addPicData({image: addImage})">Submit</button>
+            <br>
+            <br>
+            <br>
+
+
+            <div class="gallery-pic" ng-repeat="picture in gallery">
+
+
+                <img class="pic" ng-src="{{picture.image}}">
+
+
+                <button class="button" ng-click="deletePicData(picture._id)">delete</button>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <button class='home-button' ng-model="logOut" ui-sref="home">Save</button>
+
+
+
+</div>

@@ -1,74 +1,90 @@
 <!DOCTYPE html>
-<html ng-app='fishPit'>  
-    <head>
-        <title>Fish Pit</title>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-          
-        <link rel="stylesheet" type="text/css" href="style.css">
-        
-    </head>
-    <body>
-        <div class="containter">
-            <nav-bar class="top-nav"></nav-bar>
-            <header>
-               <header-logo></header-logo> 
-            </header>
-            
-            <div>
-                <ui-view></ui-view>
-            </div>
-            <div class="carousel">
-                <slider-pic ></slider-pic>
-            </div>
-            <div class="menu-box">
-                <menu-item></menu-item>
-                
-            </div>
-            <div class="about-me">
-                <about-me></about-me>
-            </div>
-            <div class="gallery-index">
-                <pic-gallery></pic-gallery>
-            </div>
-            <div class="contact-page">
-                <contact-us></contact-us>
-            </div>
-            
-            <footer>
-                
-            </footer>
-       
-        </div>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-         
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+<html ng-app='fishPit'>
 
-        
-         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-        
-        <!--<script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqD8reaekJrEafZxAFg2Mt-6CIVIe1Fs8&callback=initMap">
-        </script>-->
-         
-       
-         <script src="js/app.js"></script>
-         <script src="js/directives/headerLogo.js"></script>
-         <script src="js/directives/navBar.js"></script>
-         <script src="js/jQuery/bar.js"></script>
-         <script src="js/directives/menuItems.js"></script>
-         <script src="js/services/menuService.js"></script>
-         <script src="js/directives/sliderPic.js"></script>
-         <script src="js/directives/aboutMe.js"></script>
-         <script src="js/directives/picGallery.js"></script>
-         <script src="js/services/galleryService.js"></script>
-         <script src="js/directives/contactUs.js"></script>
-         <script src="js/services/calendarService.js"></script>
-         <script src="js/controls/calendarCtrl.js"></script>
-         <script src="js/directives/reserCalendar.js"></script>
-    </body>
-    
-    
-    
-    
+<head>
+    <title>Fish Pit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class="contain">
+        <nav-bar class="top-nav"></nav-bar>
+        <header>
+            <header-logo></header-logo>
+        </header>
+
+        <div>
+
+
+
+            </script>
+        </div>
+        <div class="carousel">
+            <slider-pic></slider-pic>
+        </div>
+        <div class="menu-box">
+            <div id="our-menu"></div>
+            <menu-item></menu-item>
+
+
+        </div>
+        <div class="about-me">
+            <div id="about-us"></div>
+            <about-me></about-me>
+        </div>
+        <div class="gallery-index">
+            <div id="view-gallery"></div>
+            <pic-gallery></pic-gallery>
+        </div>
+
+
+        <div>
+
+
+        </div>
+        <footer class="contact-page">
+            <div id="contact-us"></div>
+
+            <contact-us></contact-us>
+        </footer>
+
+        <ui-view></ui-view>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+    <script></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+
+
+
+    <script src="js/app.js"></script>
+    <script src="js/directives/headerLogo.js"></script>
+    <script src="js/directives/navBar.js"></script>
+    <script src="js/jQuery/bar.js"></script>
+    <script src="js/directives/menuItems.js"></script>
+    <script src="js/services/menuService.js"></script>
+    <script src="js/directives/sliderPic.js"></script>
+    <script src="js/directives/aboutMe.js"></script>
+    <script src="js/directives/picGallery.js"></script>
+    <script src="js/services/galleryService.js"></script>
+    <script src="js/directives/contactUs.js"></script>
+    <script src="js/services/calendarService.js"></script>
+    <script src="js/controls/calendarCtrl.js"></script>
+    <script src="js/directives/reserCalendar.js"></script>
+    <script src="js/services/userService.js"></script>
+    <script src="js/controls/adminCtrl.js"></script>
+</body>
+
+
+
+
 </html>

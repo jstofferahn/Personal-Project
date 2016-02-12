@@ -1,24 +1,25 @@
 <div>
     <div class="calendar-container">
-        
-        <div class="rHeader"><h1>Reservation</h1></div>
-        
-        <div >
+
+        <div class="rHeader">
+            <h1>Reservation</h1></div>
+
+        <div>
             <h3 id="dates">{{date | date: "longDate"}}</h3>
-            
+
         </div>
-        
-      <reservation-calendar  timeslot='time' date='date' get-reser-data='getReserData()' ng-repeat='time in times' ></reservation-calendar>
-        
+
+        <reservation-calendar timeslot='time' date='date' get-reser-data='getReserData()' ng-repeat='time in times'></reservation-calendar>
+
     </div>
-        
+
     <!--<div ui-sref='home'>home</div>   -->
-    </div>
-    
-    
-    
-    
-    
-    
-    
+</div>
+
+
+
+
+
+
+
 </div>

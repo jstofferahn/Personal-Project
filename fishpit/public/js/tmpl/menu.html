@@ -1,45 +1,28 @@
 <div>
-    <div class="menu-header"><h2>Menu</h2></div>
-     <div class="menu">
-            
-    
-        <!--<div class="input-box">
-    
-            <input type="text" name="name" ng-model="addName">
-            
-            <input type="text" name="description" ng-model="addDescription">
-            
-            <input type="number" name="price" ng-model="addPrice">
+    <div class="menu-header">
+        <h2>Menu</h2></div>
+    <div class="menu">
+
+
+
+
+
+        <div class="products" ng-repeat="foods in food">
+            <span>{{foods.name}}</span>
             <br>
-         </div> -->
-            <!--<button class="button" ng-click="addData({name: addName, description: addDescription, price: addPrice})">Submit</button>
-               <br>
-               <br>-->
-          
-            
-            <div class="products" ng-repeat="foods in food">
-                <span>{{foods.name}}</span> <br>
-                <span>{{foods.description}}</span>...............................................................................<span>${{foods.price}}</span>   <img class="menu-pic" ng-src="{{foods.image}}"> 
-                <br>
-                <br>
-                <!--<button class = "button" ng-click="editing=true"> edit</button>
-                <button class="button" ng-click="deleteData(foods._id)">delete</button>
-                <div ng-show="editing ">
-                    <input type="text" name="name" ng-model="foods.name">
-            <br>   <input type="text" name="description" ng-model="foods.description">
+            <span>{{foods.description}}</span>
+            <dots title="foods.description"></dots><span>${{foods.price}}</span> <img class="menu-pic" ng-src="{{foods.image}}">
+
             <br>
-            <input type="number" name="price" ng-model="foods.price">
             <br>
-            <button class="button" ng-click="changeData({name: foods.name, description: foods.description, price: foods.price, _id: foods._id}); editing=false">Save</button>
-                    
-                </div>
-                -->
-                
-                
-            </div>
-    
+            <br>
+
+
+
+        </div>
+
     </div>
-    
-    
-    
+
+
+
 </div>

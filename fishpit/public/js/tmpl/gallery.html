@@ -1,36 +1,32 @@
 <div>
-     <div class="gallery-header"><h1>Gallery</h1></div>
-     <div class="gallery">
-            
-    
-       
-    
-            <input type="text" image="image" ng-model="addImage">
-            
-            
-            <button class="button" ng-click="addData({image: addImage})">Submit</button>
-               <br>
-               <br>
-          
-            
-            <div class="gallery-pic" ng-repeat="picture in gallery">
-                
-                    
-                        <img class="pic" ng-src="{{picture.image}}" >
-                    
-                
-                <br>
-                
-                
-                
-                
-            </div>
-    
-   
+    <div class="gallery-header">
+        <h1>Gallery</h1></div>
+    <div class="gallery">
+
+
+
+
+
+
+
+        <div class="gallery-pic" ng-repeat="picture in gallery">
+
+            <ul>
+                <li class="pic-line"><img class="pic" ng-src="{{picture.image}}"></li>
+
+            </ul>
+            <br>
+
+
+
+
+        </div>
+
+
     </div>
-    
-    
-    
-    
-    
+
+
+
+
+
 </div>

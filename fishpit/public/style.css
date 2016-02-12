@@ -1,18 +1,36 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    
 }
-.container {
+
+body {
+    
+    width: 100%;
+    margin: 0 ;
+    padding: 0;
+    background-image: url("images/white_wall.png");
+    
+    height: 100vh;
+     margin: 0 auto;
+    left: 0;
+    right: 0
+    
+    
+}
+.contain {
     width: 100%;
     height: 100vh;
-    margin:auto
+    
+   
 }
 
 /*header .........................................................*/
 header {
     height: 150px;
-    background-color: black
+    background-color: black;
+    width: 100%;
+    margin: 0
     
 }
 .headLogo {
@@ -47,7 +65,7 @@ header {
 /*nav bar that scrolls..............................................*/
 nav {
     
-    background-color: #fff;
+    background-color: black;
     opacity: 0.9;
     height: 75px;
     left: 0;
@@ -77,13 +95,17 @@ nav {
     position: absolute
 }
  .routes {
+     background: black;
     display: inline-block;
-   color: black;
+   color: black !important;
     padding: 10px 30px 10px 30px;
     float: right;
-    text-transform: uppercase
+    text-transform: uppercase;
+    
+    
     
 }
+
 
 
 /*carousel...................................................*/
@@ -96,17 +118,19 @@ nav {
 /*Menu.......................................................*/
 .menu-box {
     
-    position: relative;
+    
      
-    width: 100%
+    width: 100%;
+    margin-bottom: 4em
 }
 .menu-header {
+    justify-content: space-between;
     text-align: center;
     height: 120px;
     padding-top: 5px;
     /*position: absolute;*/
     text-transform: uppercase;
-    background-color: #2E88BD;
+  
     font-weight: bold;
     border-bottom: 5px solid black;
     border-top: 5px solid black
@@ -114,96 +138,231 @@ nav {
 }
 
 .menu {
-    background: #2E88BD;
+    position: relative;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 5em;
+    margin-right: 5em
 }
 
 
 
 .products {
     position: relative;
-    margin-left: 3em
+    
+    font-size: 16px;
+    font-weight: bold
+    
+   
+    
+}
+.menu-pic {
+    height: 80px;
+    
+    position: absolute;
+    top: 0;
+    left: 1;
+    right: 0;
+    border-radius: 10%;
+    margin-right: 0;
+     box-shadow: 5px 5px 5px #888888;
+     transition: all 1s ease;   
+}
+.menu-pic:hover {
+    -webkit-transform: scale(1.5,1.5);
 }
 
 /*About*/
 .about-me {
     position: relative;
-    margin-bottom: 5em;
-    height: 600px
+    width: 100%;
+    height: 52em;
+    border-top: 5px solid black;
+    
+    
+    
 }
 
-/*.about {
+.about {
+    width: 100%;
     
-}*/
+}
 
 .Sushi-spot {
-    /*position: absolute;*/
-    text-align: center
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    
 }
 .description {
     position: relative;
-    width: 100%
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+    
 }
 .textbox1 {
-    position: absolute;
-    float: left;
+    display: relative;
+   font-size: 16px;
+    top: 0;
+    left: 0;
+    right: 1;
     width: 25em;
-    left: 10em;
-    margin-right: 2em
+    font-weight: bold;
+    
+    
     
 }
 .fresh-image1 {
+    display: absolute;
+    margin-top: 2em;
     width: 400px;
     border-radius: 25%;
     height: 460px;
-    padding-top: 1em
+   
+    box-shadow: 3px 3px 3px #888888;
+    
 }
 .textbox2 {
-    position: absolute;
+    display: relative;
     float: right;
     width: 25em;
-    right: 10em;
+    font-weight: bold;
+    
     
 }
 .zach-image {
+    display: absolute;
+    margin-top: 5.5em;
     width: 400px;
     border-radius: 25%;
-    height: 500px;
-    padding-top: 4em
+    height: 460px;
+    box-shadow: 3px 3px 3px #888888;
+    
 }
 
 /*gallery*/
 .gallery-index {
     position: relative;
     width: 100%;
-    height: 500px
+    border-top: 5px solid black;
+    
+    margin-bottom: 5em
+   
+   
 }
-.gallery {
-    position: absolute;
-    width: 100%;
-    height: 500px
-}
+
 .gallery-header {
     text-align: center
 }
+
+.gallery-pic {
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+    flex-wrap: wrap;
+    
+}
+
+.pic-line {
+    display: flex;
+    flex-direction: row;
+}
+
 .pic {
     
+   margin-left: 4em;
+   margin-bottom: 1em;
+    width: 150px;
+    height: 150px;
+    border: 5px solid gray;
+    box-shadow: 5px 5px 5px #888888;
+    transition: all 1s ease; 
+    border-radius: 30%
+    
+    
    
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-   float: right
+}
+.pic:hover {
+    -webkit-transform: scale(2.5,2.5);
+}
+
+
+/*contact .............................................*/
+
+footer {
+   position: relative
 }
 .contact-page {
     position: relative;
-    height: 400px;
-    background-color: black
+    width: 100%;
+    background-color: black;
+    
+     
+    
+}
+.bottomContact {
+    position: relative;
+    
+    width: 95%;
+    
 }
 
+.black-logo {
+    height: 200px;
+    position: absolute;
+    top: 6em;
+    left: 0;
+    right: 2;
+    
+    margin-left: 3em;
+    
+}
+.info {
+    color: #2E88BD;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    
+    align-items: flex-end
+    
+}
 
+.adress {
+    padding-right: 1em;
+  
+    
+}
 
-
-
+.google-map {
+    border: 2px solid red;;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 3em;
+    left: 1;
+    right: 0;
+    
+    margin-right: 4em;
+    
+}
+.admin-button {
+    color: darkgray;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+   margin-top: 26em;
+   padding-right: 18em;
+   
+}
 
 /*calendar*/
 
@@ -225,5 +384,35 @@ nav {
     float: right
 }
 
+
+/*admin*/
+
+.adminpage {
+    width:  90%;
+    height: 3000px;
+   background-image: url("images/white_wall.png");
+   margin: 0 auto;
+    z-index: 9000;
+    position: absolute;
+    top: 13em;
+    left: 0;
+    right: 0;
+   box-shadow: 10px 10px 10px #888888;
+    
+}
+.home-button {
+    position: absolute;
+    
+    left: 1;
+    right:0;
+    margin-right: 3em;
+    margin-top: 15em;
+    width: 60px;
+    border-radius: 10%;
+    text-transform: uppercase;
+    font-weight: bold
+    
+
+}
 
 

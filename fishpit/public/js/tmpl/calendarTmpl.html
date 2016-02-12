@@ -1,56 +1,53 @@
 <div>
-    
+
     <div class="reservationCalendar">
 
-        {{timeslot.time.hour}}:{{timeslot.time.minute}}0 | {{res}} Left 
-        <button  ng-hide="res.left === 0" data-target="modal1" class="btn modal-trigger">reserve</button>
-        
+        {{timeslot.time.hour}}:{{timeslot.time.minute}}0 | {{res}} Left
+        <button ng-hide="res.left === 0" data-target="modal1" class="btn modal-trigger">reserve</button>
+
         <br>
         <hr>
         <br>
-        
+
     </div>
     <div id="modal1" class="modal">
-        <div class="modal-content"> 
+        <div class="modal-content">
             <div class="row">
-            <form class="col s12">
-            <div class="row">
-                <div class="input-field col s6">
-                <input  id="first_name" type="text" class="validate" ng-model="addCustomer.firstName">
-                <label for="first_name">First Name</label>
-                </div>
-                <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate" ng-model='addCustomer.lastName'>
-                <label for="last_name">Last Name</label>
-                </div>
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate" ng-model="addCustomer.firstName">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate" ng-model='addCustomer.lastName'>
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="disabled" type="text" class="validate" ng-model="addCustomer.guests">
+                            <label for="disabled">Guests</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="number" class="validate" ng-model="addCustomer.phone">
+                            <label for="password">Phone</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate" ng-model="addCustomer.email">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="row">
-                <div class="input-field col s6">
-                <input  id="disabled" type="text" class="validate" ng-model="addCustomer.guests">
-                <label for="disabled">Guests</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                <input id="password" type="number" class="validate" ng-model="addCustomer.phone">
-                <label for="password">Phone</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                <input id="email" type="email" class="validate" ng-model="addCustomer.email">
-                <label for="email">Email</label>
-                </div>
-            </div>
-            </form>
         </div>
-      </div>
-      <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat" ng-click="addResData(addCustomer, timeslot)">Save</a>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat" ng-click="addResData(addCustomer, timeslot)">Save</a>
+        </div>
     </div>
-  </div>
-    
+
 </div>
-
-
-   
